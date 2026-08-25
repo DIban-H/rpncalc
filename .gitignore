@@ -44,3 +44,8 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 /android/key.properties
+# Widget Preview related
+.widget_preview/
+
+# Linux application
+/linux/

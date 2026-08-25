@@ -273,9 +273,9 @@ class AppHomeState extends State<AppHome> {
                         Expanded(
                           child: TextButton(
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                              backgroundColor: WidgetStateProperty.resolveWith<Color>(
                                 (states) {
-                                  if (states.contains(MaterialState.disabled)) {
+                                  if (states.contains(WidgetState.disabled)) {
                                     return Colors.blueGrey[700]!;
                                   }
                                   return Colors.grey[600]!;
