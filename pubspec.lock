@@ -609,10 +609,10 @@ packages:
     dependency: "direct main"
     description:
       name: statistics
-      sha256: "9da2eb983faee4a3be1f712f08305c5d93f1e37017d110b5c8d0e83736b5fb7f"
+      sha256: "1f886a80100b2a3a2e1bd77b9d04555b644be8caf60caffd31dab52c272845a8"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.1"
+    version: "1.2.2"
   stream_channel:
     dependency: transitive
     description:
