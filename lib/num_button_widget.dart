@@ -14,7 +14,7 @@ class NumButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Listener(
-      onPointerDown: (details) {
+      onPointerDown: (event) {
         onPressed(char);
       },
       child: TextButton(
