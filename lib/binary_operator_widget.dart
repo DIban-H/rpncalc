@@ -15,14 +15,16 @@ class BinaryOperatorWidget extends StatelessWidget {
   final Function(BinaryOperator op) onPressed;
 
   @override
-  Widget build(BuildContext context) => TextButton(
+  Widget build(BuildContext context) => Listener(
+      onPointerDown: (event) {
+        onPressed(op);
+      },
+      child: TextButton(
         style: TextButton.styleFrom(
           shape: const ContinuousRectangleBorder(),
           backgroundColor: Colors.grey[800],
         ),
-        onPressed: () {
-          onPressed(op);
-        },
+        onPressed: () {},
         child: Text(
           label,
           style: const TextStyle(
@@ -30,5 +32,5 @@ class BinaryOperatorWidget extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-      );
+      ));
 }
