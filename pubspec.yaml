@@ -22,15 +22,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_fonts: ^5.0.0
-  intl: ^0.18.0
-  package_info_plus: ^4.0.1
+  google_fonts: ^8.2.1
+  intl: ^0.20.3
+  package_info_plus: ^10.2.1
   statistics: ^1.0.24
   url_launcher: ^6.1.10
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.13.1
-  flutter_lints: ^2.0.1
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
   test:

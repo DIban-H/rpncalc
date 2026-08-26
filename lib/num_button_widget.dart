@@ -13,12 +13,14 @@ class NumButtonWidget extends StatelessWidget {
   final double fontSize;
 
   @override
-  Widget build(BuildContext context) => TextButton(
-      onPressed: () {
+  Widget build(BuildContext context) => Listener(
+      onPointerDown: (event) {
         onPressed(char);
       },
-      child: Text(
-        char,
-        style: TextStyle(fontSize: fontSize),
-      ));
+      child: TextButton(
+        onPressed: () {},
+        child: Text(
+          char,
+          style: TextStyle(fontSize: fontSize),
+      )));
 }
