@@ -43,12 +43,7 @@ class StackItemWidgetState extends State<StackItemWidget> {
                 PopupMenuItem<String>(
                   enabled: !widget.item.isEmpty,
                   value: 'copy',
-                  child: Text(
-                    'Copy ${widget.item.toRawString()}',
-                    maxLines: 1,
-                    softWrap: false,
-                    overflow: TextOverflow.fade,
-                  ),
+                  child: Text('Copy'),
                 ),
                 const PopupMenuItem<String>(
                   value: 'paste',
